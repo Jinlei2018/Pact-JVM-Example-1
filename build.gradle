@@ -108,14 +108,14 @@ project(':example-provider') {
                 //hasPactsFromPactBroker("http://localhost")
 
                 // Test Pacts from local Nanoha
-//                hasPactWith('Nanoha - With Nantionality') {
-//                    pactSource = file("$rootDir/Pacts/Nanoha/ConsumerNanohaWithNationality-ExampleProvider.json")
-//                }
+                hasPactWith('Nanoha - With Nantionality') {
+                    pactSource = file("$rootDir/Pacts/Nanoha/ConsumerNanohaWithNationality-ExampleProvider.json")
+                }
 
-//                hasPactWith('Nanoha - No Nantionality') {
-//                    stateChangeUrl = new URL('http://localhost:8080/pactStateChange')
-//                    pactSource = file("$rootDir/Pacts/Nanoha/ConsumerNanohaNoNationality-ExampleProvider.json")
-//                }
+                hasPactWith('Nanoha - No Nantionality') {
+                    stateChangeUrl = new URL('http://localhost:8080/pactStateChange')
+                    pactSource = file("$rootDir/Pacts/Nanoha/ConsumerNanohaNoNationality-ExampleProvider.json")
+                }
 
             }
         }
